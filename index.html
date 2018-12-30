@@ -1,11 +1,18 @@
 <html>
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
   <div>
-    <h3>プロフィール</h3>
+    <!--
+      VueJSで書き換えていく
+    -->
+    <h3  id="app">
+        {{ prolife }}
+    </h3>
     <div class="col-sm-4 ">
       <table class='table table-striped table-bordered table-sm'>
         <thead>
@@ -84,13 +91,18 @@
       <li>Ruby</li>
       <li>VB.NET(WinForm)</li>
       <li>C#(WinForm)</li>
-      <li>Java(a little)</li>
-      <li>Kotlin(a little)</li>
+      <li>Java(少し)</li>
+      <li>Kotlin(少し)</li>
     </ul>
     <ul>フレームワーク
       <li>Rails</li>
       <li>jQuery</li>
       <li>.NET Framework</li>
+    </ul>
+    <ul>DB
+      <li>SQLServer</li>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
     </ul>
     <ul>その他
       <li>git</li>
@@ -101,6 +113,7 @@
     <ul>
       <li>
          <a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a>
+         <a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a>
       </li>
     </ul>
   </div>
@@ -108,6 +121,7 @@
     TODO:
     思い出したら追加していく
   -->
+  <script src="index.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
