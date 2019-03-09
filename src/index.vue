@@ -1,18 +1,19 @@
 <template>
   <div>
+    <!-- <component v-bind:is="header_menu"></component> -->
     <h3>
         {{ prolife }}
     </h3>
     <div class = "row" >
       <div class="col-sm-4 col-xs-10">
-        <em>リンク</em>
+        <em>{{ this.links.title }}</em>
         <table class='table table-striped table-bordered table-sm'>
           <thead>
-            <th>{{ headerKey }}</th>
-            <th>{{ headerValue }}</th>
+            <th>{{ this.links.headerKey }}</th>
+            <th>{{ this.links.headerValue }}</th>
           </thead>
           <tbody>
-            <tr v-for="d in this.links" v-bind:key='d'>
+            <tr v-for="d in this.links.datas" v-bind:key='d'>
               <td>{{ d.key }}</td>
               <td v-if="d.link != ''">
                 <a :href="d.link">
@@ -24,66 +25,25 @@
             </tr>
           </tbody>
         </table>
-      <em>経歴</em>
+      <em>{{ this.personal_history.title }}</em>
       <table class='table table-striped table-bordered table-sm'>
         <thead>
-          <th>key</th>
-          <th>value</th>
+          <th>{{ this.personal_history.headerKey }}</th>
+          <th>{{ this.personal_history.headerValue }}</th>
         </thead>
         <tbody>
-          <tr>
-            <td>東京電機大学</td>
-            <td>~ 2016/3/31</td>
-          </tr>
-          <tr>
-            <td>SIer企業</td>
-            <td>2016/4/1 ~ 2018/8/31</td>
-          </tr>
-          <tr>
-            <td>株式会社DEPARTURE</td>
-            <td>2018/9/~now</td>
+          <tr v-for="career in this.personal_history.dates" v-bind:key='career'>
+            <td>{{career.key}}</td>
+            <td>{{career.value}}</td>
           </tr>
         </tbody>
       </table>
       <em>スキル</em>
-      <ul>言語およびフレームワーク
-        <li>Kotlin</li>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Ruby</li>
-        <li>jQuery</li>
-        <li>Vuejs(studying)</li>
-        <li>Rails</li>
-        <li>VB.NET</li>
-        <li>C#</li>
-        <li>.NET Framework(~4.7)</li>
-      </ul>
-      <ul>server side
-          <li>docker</li>
-          <li>kubernetes</li>
-      </ul>
-      <ul>DB
-        <li>MySQL</li>
-        <li>PostgreSQL</li>
-        <li>SQLServer</li>
-        <li>firebase</li>
-      </ul>
-      <ul>プロジェクト管理
-        <li>subversion</li>
-        <li>git</li>
-        <li>git hub</li>
-        <li>git hub flow</li>
-      </ul>
-      <ul>パッケージ
-        <li>yarn</li>
-        <li>npm</li>
-        <li>webpack</li>
-        <li>webpacker</li>
-      </ul>
-      <ul>通信周り
-        <li>REST</li>
-        <li>Protocol Buffers</li>
-        <li>gRPC</li>
+      <ul v-for="skil in this.skils" v-bind:key="skil">
+        {{ skil.title }}
+        <li v-for="name in skil.names " v-bind:key="name">
+          {{ name.name }}
+        </li>
       </ul>
       <li><a href="./biography/">biography</a></li>
       <em>作ったものとか</em>
@@ -98,23 +58,32 @@
   </div>
 </template>
 <script>
+import Header from './pages/header.vue'
 
 export default {
+    component: {
+      header_menu: Header
+    },
     data () {
       return{
         prolife: 'プロフィール',
-        headerKey: 'key',
-        headerValue: 'Value',
-        links: []
+        links: [],
+        personal_history: [],
+        skils: []
       }
     },
     created: function(){
       this.links = this.setLinkData()
+      this.personal_history = this.setCareer()
+      this.skils = this.setSkilSet()
     },
     methods: {
       setLinkData: function(){
-        return [
-          {
+        return {
+          title: 'リンク',
+          headerKey: 'key',
+          headerValue: 'Value',
+          datas: [{
             key: 'name',
             value: '高橋 昌弘',
             link: ''
@@ -148,6 +117,84 @@ export default {
             key: 'github(会社用)',
             value: 'MTakahashi',
             link: 'https://github.com/takahashimasahiro'
+          }
+        ]
+        }
+      },
+      setCareer: function(){
+        return {
+          title: '経歴',
+          headerKey: 'key',
+          headerValue: 'Value',
+          dates: [
+            {
+              key: '東京電機大学',
+              value: '~ 2016/3/31'
+            },
+            {
+              key: '某IT企業',
+              value: '2016/4/1 ~ 2018/8/31'
+            },
+            {
+              key: '株式会社DEPARTURE',
+              value: '2018/9/~now'
+            }
+          ]
+        }
+      },
+      setSkilSet: function(){
+        return[
+          {
+            title: '言語およびフレームワーク',
+            names: [
+              { name: 'Kotlin' },
+              { name: 'Java' },
+              { name: 'JavaScript' },
+              { name: 'jQuery' },
+              { name: 'Vuejs' },
+              { name: 'Ruby' },
+              { name: 'Rails' },
+              { name: 'VB.NET' },
+              { name: 'C#' },
+              { name: '.NET Framework(~4.7)' }
+            ]
+          },{
+            title: 'server side',
+            names:[
+              { name: 'docker' },
+              { name: 'kubernetes' }
+            ]
+          },{
+            title: 'DB',
+            names:[
+              { name: 'MySQL' },
+              { name: 'PostgreSQL' },
+              { name: 'SQLServer' },
+              { name: 'firebase' }
+            ]
+          },{
+            title: 'プロジェクト管理',
+            names:[
+              { name: 'SubVersion' },
+              { name: 'git' },
+              { name: 'git hub' },
+              { name: 'git hub flow' }
+            ]
+          },{
+            title: 'パッケージ',
+            names:[
+              { name: 'yarn' },
+              { name: 'npm' },
+              { name: 'webpack' },
+              { name: 'webpacker' }
+            ]
+          },{
+            title: '通信周り',
+            names:[
+              { name: 'REST' },
+              { name: 'Protocol Buffers' },
+              { name: 'gRPC' }
+            ]
           }
         ]
       }
