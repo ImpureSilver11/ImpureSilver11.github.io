@@ -1,11 +1,12 @@
 <template>
   <div>
     <!-- <component v-bind:is="header_menu"></component> -->
-    <h3>
-        {{ prolife }}
-    </h3>
     <div class = "row" >
+      <div class="col-sm-4"></div>
       <div class="col-sm-4 col-xs-10">
+        <h3>
+          {{ prolife }}
+        </h3>
         <em>{{ this.links.title }}</em>
         <table class='table table-striped table-bordered table-sm'>
           <thead>
@@ -25,36 +26,37 @@
             </tr>
           </tbody>
         </table>
-      <em>{{ this.personal_history.title }}</em>
-      <table class='table table-striped table-bordered table-sm'>
-        <thead>
-          <th>{{ this.personal_history.headerKey }}</th>
-          <th>{{ this.personal_history.headerValue }}</th>
-        </thead>
-        <tbody>
-          <tr v-for="career in this.personal_history.dates" v-bind:key='career'>
-            <td>{{career.key}}</td>
-            <td>{{career.value}}</td>
-          </tr>
-        </tbody>
-      </table>
-      <em>スキル</em>
-      <ul v-for="skil in this.skils" v-bind:key="skil">
-        {{ skil.title }}
-        <li v-for="name in skil.names " v-bind:key="name">
-          {{ name.name }}
-        </li>
-      </ul>
-      <li><a href="./biography/">biography</a></li>
-      <em>作ったものとか</em>
-      <ul>
-        <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
-        <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li>
-        <!-- <li><a href="https://takaonagayan.herokuapp.com/">よくわからないサイト</a></li> -->
-        <li><a href="./othello/#/">製作中</a></li>
-      </ul>
+        <em>{{ this.personal_history.title }}</em>
+        <table class='table table-striped table-bordered table-sm'>
+          <thead>
+            <th>{{ this.personal_history.headerKey }}</th>
+            <th>{{ this.personal_history.headerValue }}</th>
+          </thead>
+          <tbody>
+            <tr v-for="career in this.personal_history.dates" v-bind:key='career'>
+              <td>{{career.key}}</td>
+              <td>{{career.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <em>スキル</em>
+        <ul v-for="skil in this.skils" v-bind:key="skil">
+          {{ skil.title }}
+          <li v-for="name in skil.names " v-bind:key="name">
+            {{ name.name }}
+          </li>
+        </ul>
+        <li><a href="./biography/">biography</a></li>
+        <em>作ったものとか</em>
+        <ul>
+          <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
+          <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li>
+          <!-- <li><a href="https://takaonagayan.herokuapp.com/">よくわからないサイト</a></li> -->
+          <li><a href="./othello/#/">製作中</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4"></div>
     </div>
-  </div>
   </div>
 </template>
 <script>
