@@ -1,2 +1,6 @@
 server:
-	ruby -run -e httpd . -p 3000
+	python -m SimpleHTTPServer 3000
+build:
+	yarn build
+index:
+	vue serve src/index.vue

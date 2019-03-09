@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "gh-pages -d dist",
     "test": "jest"
   },
   "dependencies": {
