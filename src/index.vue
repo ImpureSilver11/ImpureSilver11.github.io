@@ -5,55 +5,25 @@
     </h3>
     <div class = "row" >
       <div class="col-sm-4 col-xs-10">
+        <em>リンク</em>
         <table class='table table-striped table-bordered table-sm'>
           <thead>
             <th>{{ headerKey }}</th>
             <th>{{ headerValue }}</th>
           </thead>
           <tbody>
-            <tr>
-              <td>name</td>
-              <td>高橋 昌弘</td>
-            </tr>
-            <tr>
-              <td>Birthday</td>
-              <td>1992/4/30</td>
-            </tr>
-            <tr>
-              <td>twitter</td>
-              <td>
-                <a href="https://twitter.com/ImpureSilver11">
-                  @ImpureSilver11
+            <tr v-for="d in this.links" v-bind:key='d'>
+              <td>{{ d.key }}</td>
+              <td v-if="d.link != ''">
+                <a :href="d.link">
+                  {{ d.value }}
                 </a>
-              </td>
-            </tr>
-            <tr>
-              <td>qiita</td>
-              <td>
-                <a href="https://qiita.com/ImpureSilver11">
-                  ImpureSilver11
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>homepage</td>
-              <td>
-                <a href="https://impuresilver11.hateblo.jp/">
-                  ImpureSilver11
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>github(会社用)</td>
-              <td>
-                <a href="https://github.com/takahashimasahiro">
-                  MTakahashi
-                </a>
+              <td v-else>
+                {{ d.value }}
               </td>
             </tr>
           </tbody>
         </table>
-      <!-- <div class="col-sm-4 "> -->
       <em>経歴</em>
       <table class='table table-striped table-bordered table-sm'>
         <thead>
@@ -128,15 +98,60 @@
   </div>
 </template>
 <script>
+
 export default {
     data () {
       return{
         prolife: 'プロフィール',
         headerKey: 'key',
         headerValue: 'Value',
-        tableData: ''
+        links: []
       }
     },
+    created: function(){
+      this.links = this.setLinkData()
+    },
+    methods: {
+      setLinkData: function(){
+        return [
+          {
+            key: 'name',
+            value: '高橋 昌弘',
+            link: ''
+          },
+          {
+            key: 'Birthday',
+            value: '1992/4/30',
+            link: ''
+          },
+          {
+            key: 'twitter',
+            value: '@ImpureSilver11',
+            link: 'https://twitter.com/ImpureSilver11'
+          },
+          {
+            key: 'qiita',
+            value: 'ImpureSilver11',
+            link: 'https://qiita.com/ImpureSilver11'
+          },
+          {
+            key: 'blog',
+            value: 'ImpureSilver11',
+            link: 'https://impuresilver11.hateblo.jp/'
+          },
+          {
+            key: 'github(趣味用)',
+            value: 'ImpureSilver11',
+            link: 'https://github.com/ImpureSilver11'
+          },
+          {
+            key: 'github(会社用)',
+            value: 'MTakahashi',
+            link: 'https://github.com/takahashimasahiro'
+          }
+        ]
+      }
+    }
 }
 </script>
 <style lang="less">

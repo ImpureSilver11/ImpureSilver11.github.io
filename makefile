@@ -4,3 +4,6 @@ build:
 	yarn build
 index:
 	vue serve src/index.vue
+add:
+	yarn build
+	git add .
