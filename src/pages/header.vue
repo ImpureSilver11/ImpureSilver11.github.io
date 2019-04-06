@@ -6,7 +6,13 @@
 
 <script>
 export default {
+  components: {
 
+  },
+  props: [],
+  data: function(){
+
+  }
 }
 </script>
 

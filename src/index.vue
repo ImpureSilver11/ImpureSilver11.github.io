@@ -1,6 +1,9 @@
 <template>
   <div>
-    <!-- <component v-bind:is="header_menu"></component> -->
+    <div>
+      <!-- <header_menu v-bind:is="menu"></header_menu> -->
+      <component v-bind:is="header_menu"></component>
+    </div>
     <div class = "row" >
       <div class="col-sm-4"></div>
       <div class="col-sm-4 col-xs-10">
@@ -60,14 +63,15 @@
   </div>
 </template>
 <script>
-import Header from './pages/header.vue'
+import HeaderMenu from './pages/header.vue'
 
 export default {
     component: {
-      header_menu: Header
+      header_menu: HeaderMenu
     },
     data () {
       return{
+        menu: true,
         prolife: 'プロフィール',
         links: [],
         personal_history: [],
