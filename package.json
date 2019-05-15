@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@vue/cli": "3.7.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "css-loader": "^2.1.0",
     "gh-pages": "^1.2.0",
