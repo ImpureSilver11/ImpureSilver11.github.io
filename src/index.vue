@@ -42,7 +42,7 @@
             </tr>
           </tbody>
         </table>
-        <em>スキル</em>
+        <em>スキル(触れてきたことをとりあえず思いつく限り列挙)</em>
         <ul v-for="skil in this.skils" v-bind:key="skil">
           {{ skil.title }}
           <li v-for="name in skil.names " v-bind:key="name">
