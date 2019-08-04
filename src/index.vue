@@ -85,6 +85,7 @@ export default {
     },
     methods: {
       // TODO: この辺のJSONはどっかからとってくるようにする
+      // ファイル作っておいてもいいか
       setLinkData: function(){
         return {
           title: 'リンク',
