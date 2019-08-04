@@ -84,6 +84,7 @@ export default {
       this.skils = this.setSkilSet()
     },
     methods: {
+      // TODO: この辺のJSONはどっかからとってくるようにする
       setLinkData: function(){
         return {
           title: 'リンク',
