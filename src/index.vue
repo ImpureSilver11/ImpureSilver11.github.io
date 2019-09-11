@@ -53,7 +53,7 @@
         <em>作ったものとか</em>
         <ul>
           <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
-          <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li>
+          <!-- <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li> -->
           <!-- <li><a href="https://takaonagayan.herokuapp.com/">よくわからないサイト</a></li> -->
           <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li>
           <li><a href="./othello/#/">製作中</a></li>
