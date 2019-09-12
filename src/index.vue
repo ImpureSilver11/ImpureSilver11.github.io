@@ -56,7 +56,7 @@
           <!-- <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li> -->
           <li><a href="https://takaonagayan.herokuapp.com/">工事中</a></li>
           <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li>
-          <li><a href="./othello/#/">製作中</a></li>
+          <li><a href="./othello/#/">オセロ(途中))</a></li>
         </ul>
       </div>
       <div class="col-sm-4"></div>
