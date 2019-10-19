@@ -1,0 +1,113 @@
+[
+  {
+    "title": "言語およびフレームワーク",
+    "names": [
+      {
+        "name": "Kotlin"
+      },
+      {
+        "name": "Java"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "jQuery"
+      },
+      {
+        "name": "Vuejs"
+      },
+      {
+        "name": "Ruby"
+      },
+      {
+        "name": "Rails"
+      },
+      {
+        "name": "VB.NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": ".NET Framework(~4.7)"
+      }
+    ]
+  },
+  {
+    "title": "server side",
+    "names": [
+      {
+        "name": "docker"
+      },
+      {
+        "name": "kubernetes"
+      }
+    ]
+  },
+  {
+    "title": "DB",
+    "names": [
+      {
+        "name": "MySQL"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "SQLServer"
+      },
+      {
+        "name": "firebase"
+      }
+    ]
+  },
+  {
+    "title": "プロジェクト管理",
+    "names": [
+      {
+        "name": "SubVersion"
+      },
+      {
+        "name": "git"
+      },
+      {
+        "name": "git hub"
+      },
+      {
+        "name": "git hub flow"
+      }
+    ]
+  },
+  {
+    "title": "パッケージ",
+    "names": [
+      {
+        "name": "yarn"
+      },
+      {
+        "name": "npm"
+      },
+      {
+        "name": "webpack"
+      },
+      {
+        "name": "webpacker"
+      }
+    ]
+  },
+  {
+    "title": "通信周り",
+    "names": [
+      {
+        "name": "REST"
+      },
+      {
+        "name": "Protocol Buffers"
+      },
+      {
+        "name": "gRPC"
+      }
+    ]
+  }
+]

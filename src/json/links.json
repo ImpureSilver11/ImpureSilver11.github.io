@@ -1,0 +1,42 @@
+{
+  "title": "リンク",
+  "headerKey": "key",
+  "headerValue": "Value",
+  "datas": [
+    {
+    "key": "name",
+    "value": "高橋 昌弘",
+    "link": ""
+    },
+    {
+    "key": "Birthday",
+    "value": "1992/4/30",
+    "link": ""
+    },
+    {
+    "key": "twitter",
+    "value": "@ImpureSilver11",
+    "link": "https://twitter.com/ImpureSilver11"
+    },
+    {
+    "key": "qiita",
+    "value": "ImpureSilver11",
+    "link": "https://qiita.com/ImpureSilver11"
+    },
+    {
+    "key": "blog",
+    "value": "ImpureSilver11",
+    "link": "https://impuresilver11.hateblo.jp/"
+    },
+    {
+    "key": "github(趣味用)",
+    "value": "ImpureSilver11",
+    "link": "https://github.com/ImpureSilver11"
+    },
+    {
+    "key": "github(会社用)",
+    "value": "MTakahashi",
+    "link": "https://github.com/takahashimasahiro"
+    }
+  ]
+}
