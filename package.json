@@ -21,7 +21,7 @@
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
     "vue-lodash": "^2.0.0",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.2"
   },
   "devDependencies": {
     "vue-router": "^3.1.3",
