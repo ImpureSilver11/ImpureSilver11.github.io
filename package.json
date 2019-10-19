@@ -17,7 +17,7 @@
     "less-loader": "^5.0.0",
     "lodash": "^4.17.15",
     "lodash.merge": "^4.6.2",
-    "typescript": "^3.6.3",
+    "typescript": "^3.6.4",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
     "vue-lodash": "^2.0.0",
