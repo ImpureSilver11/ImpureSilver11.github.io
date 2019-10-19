@@ -1,8 +1,10 @@
 <template>
   <div>
     <div>
-      <!-- <header_menu v-bind:is="menu"></header_menu> -->
-      <component v-bind:is="header_menu"></component>
+      <keep-alive>
+        <!-- <header_menu v-bind:is="menu"></header_menu> -->
+        <component v-bind:is="header"></component>
+      </keep-alive>
     </div>
     <div class = "row" >
       <div class="col-sm-4"></div>
@@ -68,7 +70,7 @@ import HeaderMenu from './pages/header.vue'
 
 export default {
     component: {
-      header_menu: HeaderMenu
+      HeaderMenu
     },
     data () {
       return{
