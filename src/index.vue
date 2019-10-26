@@ -60,6 +60,9 @@
           <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li>
           <li><a href="./othello/#/">オセロ(途中))</a></li>
         </ul>
+        <ul>
+          <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
+        </ul>
       </div>
       <div class="col-sm-4"></div>
     </div>
