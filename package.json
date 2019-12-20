@@ -19,7 +19,7 @@
     "lodash.merge": "^4.6.2",
     "typescript": "^3.7.3",
     "vue": "^2.6.10",
-    "vue-loader": "^15.7.1",
+    "vue-loader": "^15.8.3",
     "vue-lodash": "^2.0.0",
     "webpack-dev-server": "^3.10.0"
   },
