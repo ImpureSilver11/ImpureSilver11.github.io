@@ -159,55 +159,32 @@ export default {
       setSkilSet: function(){
         return[
           {
-            title: '言語およびフレームワーク',
+            title: '言語',
             names: [
-              { name: 'Kotlin' },
-              { name: 'Java' },
-              { name: 'JavaScript' },
-              { name: 'jQuery' },
-              { name: 'Vuejs' },
-              { name: 'Ruby' },
-              { name: 'Rails' },
-              { name: 'VB.NET' },
-              { name: 'C#' },
-              { name: '.NET Framework(~4.7)' }
+              { name: 'Kotlin(少しふれた)' },
+              { name: 'Java(昔触れた)' },
+              { name: 'JavaScript(使わざるおえない)' },
+              { name: 'Ruby(メインで使う)' },
+              { name: 'python(少し触れた)' },
+              { name: 'VB.NET(昔使ってた)' },
+              { name: 'C#(少し使った)' },
+              { name: 'GO(好き)' },
             ]
           },{
-            title: 'server side',
+            title: 'フレームワーク',
             names:[
-              { name: 'docker' },
-              { name: 'kubernetes' }
+              { name: 'Vuejs(ちょこちょこ使う)' },
+              { name: 'Rails(メインで使う)' },
+              { name: 'flask(少し触れた)' },
+              { name: 'go-gin(好き)' }
             ]
           },{
             title: 'DB',
             names:[
-              { name: 'MySQL' },
-              { name: 'PostgreSQL' },
-              { name: 'SQLServer' },
-              { name: 'firebase' }
-            ]
-          },{
-            title: 'プロジェクト管理',
-            names:[
-              { name: 'SubVersion' },
-              { name: 'git' },
-              { name: 'git hub' },
-              { name: 'git hub flow' }
-            ]
-          },{
-            title: 'パッケージ',
-            names:[
-              { name: 'yarn' },
-              { name: 'npm' },
-              { name: 'webpack' },
-              { name: 'webpacker' }
-            ]
-          },{
-            title: '通信周り',
-            names:[
-              { name: 'REST' },
-              { name: 'Protocol Buffers' },
-              { name: 'gRPC' }
+              { name: 'PostgreSQL(よく使う)' },
+              { name: 'MySQL(少しふれた)' },
+              { name: 'SQLServer(昔使ってた)' },
+              { name: 'firebase(少しふれた)' }
             ]
           }
         ]
