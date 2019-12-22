@@ -184,7 +184,6 @@ export default {
               { name: 'PostgreSQL(よく使う)' },
               { name: 'MySQL(少しふれた)' },
               { name: 'SQLServer(昔使ってた)' },
-              { name: 'firebase(少しふれた)' }
             ]
           }
         ]
