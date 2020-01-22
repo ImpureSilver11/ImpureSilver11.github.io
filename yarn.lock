@@ -1677,13 +1677,13 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@vue/cli-shared-utils@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.1.1.tgz#79e26b56fda185fda00e5787a8f4aac56757b123"
-  integrity sha512-nsxNW8Sy9y2yx/r9DqgZoYg/DoygvASIQl0XXG+imQUDWEXKmD6UZA6y5ANfStCljzZ/wd7WgWP+txmjy6exOw==
+"@vue/cli-shared-utils@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.1.2.tgz#d33984c8790ad869ef77f5229abd3e8e584fe58b"
+  integrity sha512-uQAVqxCWdL5ipZ0TPu6SVsdokQp4yHt8SzzpUGhq8TkW4vwalGddJAAJrqZHMl91ZTIJ4p4ixofmCaaJo5rSRA==
   dependencies:
     "@hapi/joi" "^15.0.1"
-    chalk "^2.4.1"
+    chalk "^2.4.2"
     execa "^1.0.0"
     launch-editor "^2.2.1"
     lru-cache "^5.1.1"
@@ -1693,30 +1693,27 @@
     request "^2.87.0"
     request-promise-native "^1.0.8"
     semver "^6.1.0"
-    string.prototype.padstart "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@vue/cli-ui-addon-webpack@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-4.1.1.tgz#951d99ce2e4a23a899cb9a4d3eff46d0225d9c79"
-  integrity sha512-AKWt4ahv19gB3oV12lTb1G7AlimpTudCuWuMOL3BlaWZNNbspseFegq1I7mSJQHK45z3iy6GysIAsn9fHCAKvg==
+"@vue/cli-ui-addon-webpack@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-4.1.2.tgz#2b3d0e6af43c92fba186e0722a043b1ee10b5b34"
+  integrity sha512-zmb8cYHCxqEzrpQvlV5R8zMcDWJMo6KRTIn13i5FxBdezZkkni1tJunaoiDRjEFyuu01Lg8jcb8TNxuIaH5TKg==
 
-"@vue/cli-ui-addon-widgets@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-4.1.1.tgz#9d8e0cf0cc377e6ea9e05848cb53a29691fd276d"
-  integrity sha512-M98L2PcC6LStUV9IftXS6jjwjM0BXIan/7T+FBN1U69WyTRRSNbbGmhicn9HzcfmAiHbS9Ac5Pk3nz3KXafNTQ==
+"@vue/cli-ui-addon-widgets@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-4.1.2.tgz#68c22a05cd7f8b0baa138b54cc66e9cab20416a7"
+  integrity sha512-Y6/MLtfaiEfoEToSoSSbFi/EshpLmsBMfK7m98NbCTZgpnhJ7iSaHYkYsF4gg0D52C6Oa2cy0iLoJtaFA8zQbQ==
 
-"@vue/cli-ui@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-4.1.1.tgz#02bf2d451831f9bce2c2ebce751039ab8c7f12a3"
-  integrity sha512-uXrIX4IJeXBDEchY+AeoeKf9FiYlHILFR4JjJvI6p6nq7tHhCN3UFt7/XScWzEfYyGRuHVtY3MCejMIR9LaKvA==
+"@vue/cli-ui@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-4.1.2.tgz#3a25211d3e9fd77abb4e8d172beb04c39e1fcbd4"
+  integrity sha512-fA9z8yDQqhD8QcHlWt6wX0t+7EVKFVRRzxPnZ8dEoYaoo+Y5wLAE0fJyyxjpzlwEStqBSDs6A7X+1wQq/FBICQ==
   dependencies:
     "@akryum/winattr" "^3.0.0"
-    "@vue/cli-shared-utils" "^4.1.1"
-    chalk "^2.4.1"
+    "@vue/cli-shared-utils" "^4.1.2"
     clone "^2.1.1"
     deepmerge "^3.2.0"
-    execa "^1.0.0"
     express-history-api-fallback "^2.2.1"
     fkill "^6.1.0"
     fs-extra "^7.0.1"
@@ -1736,24 +1733,22 @@
     portfinder "^1.0.25"
     prismjs "^1.16.0"
     rss-parser "^3.7.3"
-    semver "^6.1.0"
     shortid "^2.2.15"
     typescript "^3.4.5"
     vue-cli-plugin-apollo "^0.21.3"
     watch "^1.0.2"
 
-"@vue/cli@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-4.1.1.tgz#bf24d6adbc3b6b6cc1a9b9d10bb1f8fc1159b312"
-  integrity sha512-Qdxn3rL4E34y22geQdPOkQtGKbewa+hiyD0rEXMBOjqIqxWnYm68p/dTJjHeou3egGu5P9ol7BujJfPJBhfgTw==
+"@vue/cli@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-4.1.2.tgz#39a208366b49a0457ed70db7e85b9bd6efbede49"
+  integrity sha512-CGBcPFvnWnZMV+7Q4FI8yBWkQKECXYQ2Sf8YWoqn5ZG3ZRODG8dXSejg1O0VktKtPl7IVYYXOOqvyerV11fYmw==
   dependencies:
-    "@vue/cli-shared-utils" "^4.1.1"
-    "@vue/cli-ui" "^4.1.1"
-    "@vue/cli-ui-addon-webpack" "^4.1.1"
-    "@vue/cli-ui-addon-widgets" "^4.1.1"
+    "@vue/cli-shared-utils" "^4.1.2"
+    "@vue/cli-ui" "^4.1.2"
+    "@vue/cli-ui-addon-webpack" "^4.1.2"
+    "@vue/cli-ui-addon-widgets" "^4.1.2"
     boxen "^4.1.0"
-    chalk "^2.4.1"
-    cmd-shim "^2.0.2"
+    cmd-shim "^3.0.3"
     commander "^2.20.0"
     debug "^4.1.0"
     deepmerge "^3.2.0"
@@ -1761,7 +1756,6 @@
     download-git-repo "^1.0.2"
     ejs "^2.7.1"
     envinfo "^7.5.0"
-    execa "^1.0.0"
     fs-extra "^7.0.1"
     globby "^9.2.0"
     import-global "^0.1.0"
@@ -1774,10 +1768,7 @@
     lru-cache "^5.1.1"
     minimist "^1.2.0"
     recast "^0.18.1"
-    request "^2.87.0"
-    request-promise-native "^1.0.8"
-    resolve "^1.13.0"
-    semver "^6.1.0"
+    resolve "^1.13.1"
     shortid "^2.2.15"
     slash "^3.0.0"
     validate-npm-package-name "^3.0.0"
@@ -3586,10 +3577,10 @@ clone@^2.1.1, clone@^2.1.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
-cmd-shim@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/cmd-shim/-/cmd-shim-2.0.2.tgz#6fcbda99483a8fd15d7d30a196ca69d688a2efdb"
-  integrity sha1-b8vamUg6j9FdfTChlspp1oii79s=
+cmd-shim@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/cmd-shim/-/cmd-shim-3.0.3.tgz#2c35238d3df37d98ecdd7d5f6b8dc6b21cadc7cb"
+  integrity sha512-DtGg+0xiFhQIntSBRzL2fRQBnmtAVwXIDo4Qq46HPpObYquxMaZS4sb82U9nH91qJrlosC1wa9gwr0QyL/HypA==
   dependencies:
     graceful-fs "^4.1.2"
     mkdirp "~0.5.0"
@@ -3658,12 +3649,7 @@ commander@1.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-1.0.0.tgz#5e6a88e7070ff5908836ead19169548c30f90bcd"
   integrity sha1-XmqI5wcP9ZCINurRkWlUjDD5C80=
 
-commander@^2.18.0, commander@^2.20.0, commander@~2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
-  integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
-
-commander@^2.19.0:
+commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@~2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -4644,7 +4630,7 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.4.3, es-abstract@^1.5.1:
+es-abstract@^1.5.1:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.13.0.tgz#ac86145fdd5099d8dd49558ccba2eaf9b88e24e9"
   integrity sha512-vDZfg/ykNxQVwup/8E1BZhVzFfBxs9NqMzGcvIJrqg5k2/5Za2bWo40dK2J1pgLngZ7c+Shh8lwYtLGyrwPutg==
@@ -5313,7 +5299,7 @@ fswin@^2.17.1227:
   resolved "https://registry.yarnpkg.com/fswin/-/fswin-2.17.1227.tgz#c598061e1ac1e7110e2e6ce884296efa27dc2507"
   integrity sha512-xNDktvwzSsXT8Xqnpz59VbuFwGHhtn1w+dS7QQ+wAu5cbH0p3WMGKU9Duf7cPna+nubhR+5ZG1MTl6/V6xgRgw==
 
-function-bind@^1.0.2, function-bind@^1.1.1:
+function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
@@ -9250,10 +9236,10 @@ resolve@1.1.7:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
   integrity sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
 
-resolve@^1.1.6, resolve@^1.13.0, resolve@^1.3.2:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.13.1.tgz#be0aa4c06acd53083505abb35f4d66932ab35d16"
-  integrity sha512-CxqObCX8K8YtAhOBRg+lrcdn+LK+WYOS8tSjqSFbjtrI5PnS63QPhZl4+yKfrU9tdsbMu9Anr/amegT87M9Z6w==
+resolve@^1.1.6, resolve@^1.13.1, resolve@^1.3.2:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.0.tgz#1b7ca96073ebb52e741ffd799f6b39ea462c67f5"
+  integrity sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==
   dependencies:
     path-parse "^1.0.6"
 
@@ -9942,15 +9928,6 @@ string-width@^4.2.0:
     emoji-regex "^8.0.0"
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
-
-string.prototype.padstart@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/string.prototype.padstart/-/string.prototype.padstart-3.0.0.tgz#5bcfad39f4649bb2d031292e19bcf0b510d4b242"
-  integrity sha1-W8+tOfRkm7LQMSkuGbzwtRDUskI=
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.4.3"
-    function-bind "^1.0.2"
 
 string_decoder@^1.0.0, string_decoder@^1.1.1:
   version "1.2.0"
