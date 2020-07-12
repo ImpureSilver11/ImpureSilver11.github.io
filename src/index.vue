@@ -64,7 +64,9 @@
           <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
         </ul>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        last update 20190804
+      </div>
     </div>
   </div>
 </template>
