@@ -52,7 +52,7 @@
           </li>
         </ul>
         <li><a href="./biography/">biography</a></li>
-        <em>作ったものとか</em>
+        <em>作ったものとか[last update 20190804]</em>
         <ul>
           <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
           <!-- <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li> -->
@@ -64,9 +64,7 @@
           <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
         </ul>
       </div>
-      <div class="col-sm-4">
-        last update 20190804
-      </div>
+      <div class="col-sm-4"></div>
     </div>
   </div>
 </template>
