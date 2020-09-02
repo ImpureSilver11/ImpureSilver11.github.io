@@ -63,10 +63,6 @@
         <ul>
           <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
         </ul>
-        LINE QRコード
-        <ul>
-          <img src="./images/line_qr.jpg" width="100" />
-        </ul>
       </div>
       <div class="col-sm-4"></div>
     </div>

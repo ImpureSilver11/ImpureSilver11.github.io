@@ -7,7 +7,7 @@ module.exports = [
     entry: './index.js',
     output: {
       filename: 'bundle.js',
-      path: path.join(__dirname, './dist/'),
+      path: path.resolve(__dirname, 'dist'),
     },
     module: {
       rules: [
@@ -22,6 +22,13 @@ module.exports = [
             'css-loader',
             'less-loader'
           ]
+        },
+        {
+          test: /\.(png|jpg|gif|svg)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]?[hash]'
+          }
         }
       ]
     },
@@ -30,3 +37,12 @@ module.exports = [
     ],
   },
 ];
+
+// output: {
+//   filename: 'my-first-webpack.bundle.js'
+// },
+// module: {
+//   rules: [
+//     { test: /\.txt$/, use: 'raw-loader' }
+//   ]
+// }
