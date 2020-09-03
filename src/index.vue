@@ -97,11 +97,12 @@ export default {
           title: 'リンク',
           headerKey: 'key',
           headerValue: 'Value',
-          datas: [{
-            key: 'name',
-            value: '高橋 昌弘',
-            link: ''
-          },
+          datas: [
+          //   {
+          //   key: 'name',
+          //   value: '高橋 昌弘',
+          //   link: ''
+          // },
           {
             key: 'Birthday',
             value: '1992/4/30',
@@ -142,17 +143,22 @@ export default {
           headerValue: 'Value',
           dates: [
             {
-              key: '東京電機大学',
-              value: '~ 2016/3/31'
-            },
-            {
-              key: '某IT企業',
-              value: '2016/4/1 ~ 2018/8/31'
-            },
-            {
-              key: '株式会社DEPARTURE',
-              value: '2018/9/~now'
+              key: '詳細は個人的に教えます',
+              value: '2016/4/1~ 社会人'
             }
+            // ,
+            // {
+            //   key: '東京電機大学',
+            //   value: '~ 2016/3/31'
+            // },
+            // {
+            //   key: '某IT企業',
+            //   value: '2016/4/1 ~ 2018/8/31'
+            // },
+            // {
+            //   key: '株式会社DEPARTURE',
+            //   value: '2018/9/~now'
+            // }
           ]
         }
       },
