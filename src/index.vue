@@ -108,16 +108,16 @@ export default {
             value: '1992/4/30',
             link: ''
           },
-          {
-            key: 'twitter',
-            value: '@ImpureSilver11',
-            link: 'https://twitter.com/ImpureSilver11'
-          },
-          {
-            key: 'qiita',
-            value: 'ImpureSilver11',
-            link: 'https://qiita.com/ImpureSilver11'
-          },
+          // {
+          //   key: 'twitter',
+          //   value: '@ImpureSilver11',
+          //   link: 'https://twitter.com/ImpureSilver11'
+          // },
+          // {
+          //   key: 'qiita',
+          //   value: 'ImpureSilver11',
+          //   link: 'https://qiita.com/ImpureSilver11'
+          // },
           {
             key: 'blog',
             value: 'ImpureSilver11',
