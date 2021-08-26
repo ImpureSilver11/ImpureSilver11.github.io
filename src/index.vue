@@ -54,15 +54,15 @@
         <li><a href="./biography/">biography</a></li>
         <em>作ったものとか[last update 20190804]</em>
         <ul>
-          <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
+          <!-- <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li> -->
           <!-- <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li> -->
-          <li><a href="https://takaonagayan.herokuapp.com/">工事中</a></li>
+          <!-- <li><a href="https://takaonagayan.herokuapp.com/">工事中</a></li> -->
           <!-- <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li> -->
           <!-- <li><a href="./othello/#/">オセロ</a></li> -->
           <li><a href="./dirty">疲れた時に押すボタン</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
+          <!-- <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li> -->
         </ul>
       </div>
       <div class="col-sm-4"></div>
@@ -168,31 +168,32 @@ export default {
           {
             title: '言語',
             names: [
-              { name: 'Kotlin(少しふれた)' },
-              { name: 'Java(昔触れた)' },
-              { name: 'JavaScript(使わざるおえない)' },
-              { name: 'Ruby(メインで使う)' },
-              { name: 'python(少し触れた)' },
-              { name: 'VB.NET(昔使ってた)' },
-              { name: 'C#(少し使った)' },
-              { name: 'GO(好き)' },
+          //     { name: 'Kotlin(少しふれた)' },
+          //     { name: 'Java(昔触れた)' },
+          //     { name: 'JavaScript(使わざるおえない)' },
+          //     { name: 'Ruby(メインで使う)' },
+          //     { name: 'python(少し触れた)' },
+          //     { name: 'VB.NET(昔使ってた)' },
+          //     { name: 'C#(少し使った)' },
+          //     { name: 'GO(好き)' },
             ]
           },{
             title: 'フレームワーク',
             names:[
-              { name: 'Vuejs(ちょこちょこ使う)' },
-              { name: 'Rails(メインで使う)' },
-              { name: 'flask(少し触れた)' },
-              { name: 'go-gin(好き)' }
-            ]
-          },{
-            title: 'DB',
-            names:[
-              { name: 'PostgreSQL(よく使う)' },
-              { name: 'MySQL(少しふれた)' },
-              { name: 'SQLServer(昔使ってた)' },
+          //     { name: 'Vuejs(ちょこちょこ使う)' },
+          //     { name: 'Rails(メインで使う)' },
+          //     { name: 'flask(少し触れた)' },
+          //     { name: 'go-gin(好き)' }
             ]
           }
+          // ,{
+          //   title: 'DB',
+          //   names:[
+          //     { name: 'PostgreSQL(よく使う)' },
+          //     { name: 'MySQL(少しふれた)' },
+          //     { name: 'SQLServer(昔使ってた)' },
+          //   ]
+          // }
         ]
       }
     }
