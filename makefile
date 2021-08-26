@@ -7,3 +7,4 @@ index:
 add:
 	yarn build
 	git add .
+

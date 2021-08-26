@@ -57,8 +57,9 @@
           <li><a href="https://github.com/takahashimasahiro/kintai_app">勤怠app</a></li>
           <!-- <li><a href="https://fir-clone-f614e.firebaseapp.com/">firebaseで遊ぶ</a></li> -->
           <li><a href="https://takaonagayan.herokuapp.com/">工事中</a></li>
-          <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li>
-          <li><a href="./othello/#/">オセロ</a></li>
+          <!-- <li><a href="https://impuresilver11.github.io/sudoku/">数独を作りたい</a></li> -->
+          <!-- <li><a href="./othello/#/">オセロ</a></li> -->
+          <li><a href="./dirty">疲れた時に押すボタン</a></li>
         </ul>
         <ul>
           <li><a href="https://www.amazon.jp/hz/wishlist/ls/O62WMU63KR32?ref_=wl_share/">ほしい物リスト</a></li>
