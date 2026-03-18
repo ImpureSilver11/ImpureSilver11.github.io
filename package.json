@@ -27,6 +27,6 @@
     "vue-router": "^5.0.3",
     "vue-template-compiler": "^2.7.16",
     "webpack": "^5.105.4",
-    "webpack-cli": "^7.0.0"
+    "webpack-cli": "^7.0.2"
   }
 }
