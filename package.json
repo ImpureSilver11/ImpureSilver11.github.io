@@ -24,7 +24,7 @@
     "webpack-dev-server": "^5.2.3"
   },
   "devDependencies": {
-    "vue-router": "^5.0.3",
+    "vue-router": "^5.0.4",
     "vue-template-compiler": "^2.7.16",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.0"
