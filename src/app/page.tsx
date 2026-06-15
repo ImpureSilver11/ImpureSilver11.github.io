@@ -1,45 +1,68 @@
 const links = [
-  { key: 'Birthday', value: '1992/4/30', href: '' },
-  { key: 'Blog', value: 'ImpureSilver11', href: 'https://impuresilver11.hateblo.jp/' },
-  { key: 'GitHub', value: 'ImpureSilver11', href: 'https://github.com/ImpureSilver11' },
+  { key: 'NAME', value: 'ImpureSilver11', href: '' },
+  { key: 'BORN', value: '1992/4/30', href: '' },
+  { key: 'BLOG', value: '>> OPEN <<', href: 'https://impuresilver11.hateblo.jp/' },
+  { key: 'GITHUB', value: '>> OPEN <<', href: 'https://github.com/ImpureSilver11' },
 ]
 
 const skills = [
   {
-    title: '言語・フレームワーク',
-    names: ['JavaScript', 'Ruby', 'Rails',],
+    title: '[ LANGUAGE / FRAMEWORK ]',
+    names: ['JavaScript', 'Ruby', 'Rails'],
+    level: 80,
   },
   {
-    title: 'インフラ',
+    title: '[ INFRA ]',
     names: ['Docker'],
+    level: 60,
   },
   {
-    title: 'DB',
+    title: '[ DATABASE ]',
     names: ['MySQL', 'PostgreSQL', 'Firebase'],
+    level: 70,
   },
   {
-    title: '通信',
+    title: '[ COMMUNICATION ]',
     names: ['REST'],
+    level: 75,
   },
 ]
 
 export default function Portfolio() {
   return (
-    <div className="space-y-8">
-      <section>
-        <h1 className="text-2xl font-bold mb-4">プロフィール</h1>
-        <table className="w-full text-sm border-collapse">
+    <div className="space-y-6 text-center">
+
+      {/* Title screen flavor */}
+      <div className="py-4">
+        <div className="glow-amber text-xs mb-2" style={{ fontFamily: "'Press Start 2P', monospace" }}>
+          ★ PORTFOLIO ★
+        </div>
+        <div className="text-[8px] text-green-600">
+          {'> SELECT YOUR INQUIRY <'}
+          <span className="blink">_</span>
+        </div>
+      </div>
+
+      {/* PLAYER STATUS */}
+      <section className="pixel-panel">
+        <h2 className="section-title text-center">
+          ▶ PLAYER STATUS
+        </h2>
+        <table className="w-full" style={{ borderSpacing: '0 6px', borderCollapse: 'separate' }}>
           <tbody>
             {links.map((item) => (
-              <tr key={item.key} className="border-b border-gray-200">
-                <td className="py-2 pr-4 font-medium text-gray-500 w-32">{item.key}</td>
-                <td className="py-2">
+              <tr key={item.key}>
+                <td className="pr-4 text-green-500 w-28 text-center align-middle" style={{ fontSize: '8px' }}>
+                  {item.key}
+                </td>
+                <td className="text-green-300 text-center" style={{ fontSize: '9px' }}>
                   {item.href ? (
                     <a
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      className="text-yellow-400 hover:text-yellow-200"
+                      style={{ textShadow: '0 0 6px #fbbf24' }}
                     >
                       {item.value}
                     </a>
@@ -53,30 +76,42 @@ export default function Portfolio() {
         </table>
       </section>
 
-      <section>
-        <h2 className="text-xl font-bold mb-4">経歴</h2>
-        <table className="w-full text-sm border-collapse">
-          <tbody>
-            <tr className="border-b border-gray-200">
-              <td className="py-2 pr-4 text-gray-500 w-32">2016/4/1〜</td>
-              <td className="py-2">社会人（詳細は個人的に）</td>
-            </tr>
-          </tbody>
-        </table>
+      {/* QUEST LOG */}
+      <section className="pixel-panel">
+        <h2 className="section-title text-center">
+          ▶ QUEST LOG
+        </h2>
+        <div className="space-y-3">
+          <div style={{ fontSize: '8px' }}>
+            <div className="text-green-600 mb-1">2016/4/1</div>
+            <div className="text-green-300">✔ 社会人クエスト　スタート！</div>
+            <div className="text-green-600 mt-1">
+              {'※ 詳細は直接コンタクトせよ'}
+            </div>
+          </div>
+          <div className="text-green-700 mt-2" style={{ fontSize: '8px' }}>
+            {'- - - MORE TO BE UNLOCKED - - -'}
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2 className="text-xl font-bold mb-4">スキル</h2>
-        <div className="space-y-4">
+      {/* SKILL TREE */}
+      <section className="pixel-panel">
+        <h2 className="section-title text-center">
+          ▶ SKILL TREE
+        </h2>
+        <div className="space-y-5">
           {skills.map((group) => (
             <div key={group.title}>
-              <h3 className="text-sm font-semibold text-gray-500 mb-2">{group.title}</h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="text-green-600 mb-2 text-center" style={{ fontSize: '7px' }}>
+                {group.title}
+              </div>
+              <div className="hp-bar mb-2">
+                <div className="hp-bar-fill" style={{ width: `${group.level}%` }} />
+              </div>
+              <div className="flex flex-wrap gap-2 justify-center">
                 {group.names.map((name) => (
-                  <span
-                    key={name}
-                    className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700"
-                  >
+                  <span key={name} className="pixel-tag">
                     {name}
                   </span>
                 ))}
@@ -85,6 +120,19 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
+
+      {/* Footer ticker */}
+      <div className="pixel-panel py-2">
+        <div className="marquee text-green-700" style={{ fontSize: '8px' }}>
+          <span>
+            {'★ PRESS ANY KEY TO CONTINUE ★　　'}
+            {'★ PRESS ANY KEY TO CONTINUE ★　　'}
+            {'★ PRESS ANY KEY TO CONTINUE ★　　'}
+            {'★ PRESS ANY KEY TO CONTINUE ★　　'}
+          </span>
+        </div>
+      </div>
+
     </div>
   )
 }

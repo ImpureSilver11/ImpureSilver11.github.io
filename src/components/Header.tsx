@@ -2,18 +2,39 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="bg-white border-b border-gray-200">
-      <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold text-gray-900 hover:text-gray-600">
-          ImpureSilver11
+    <header style={{ borderBottom: '2px solid #166534', backgroundColor: '#020c02' }}>
+      <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+        <Link
+          href="/"
+          className="glow"
+          style={{
+            fontFamily: "'Press Start 2P', monospace",
+            fontSize: '11px',
+            color: '#4ade80',
+            textDecoration: 'none',
+          }}
+        >
+          {'> ImpureSilver11'}
+          <span className="blink">_</span>
         </Link>
-        <nav className="flex gap-6 text-sm">
-          <Link href="/" className="text-gray-600 hover:text-gray-900">
-            Portfolio
-          </Link>
-          <Link href="/blog" className="text-gray-600 hover:text-gray-900">
-            Blog
-          </Link>
+        <nav className="flex gap-6">
+          {[
+            { label: 'STATUS', href: '/' },
+            { label: 'BLOG', href: '/blog' },
+          ].map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              style={{
+                fontFamily: "'Press Start 2P', monospace",
+                fontSize: '8px',
+                color: '#86efac',
+                textDecoration: 'none',
+              }}
+            >
+              [{label}]
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

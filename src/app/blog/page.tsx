@@ -6,20 +6,20 @@ export default function BlogList() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Blog</h1>
+      <h1 className="text-2xl font-bold mb-6" style={{ color: '#bbf7d0' }}>Blog</h1>
       {posts.length === 0 ? (
-        <p className="text-gray-500">記事はまだありません。</p>
+        <p style={{ color: '#86efac' }}>記事はまだありません。</p>
       ) : (
         <ul className="space-y-6">
           {posts.map((post) => (
-            <li key={post.slug} className="border-b border-gray-200 pb-6">
+            <li key={post.slug} className="pb-6" style={{ borderBottom: '1px dashed #166534' }}>
               <Link href={`/blog/${post.slug}`} className="group">
-                <p className="text-sm text-gray-400 mb-1">{post.date}</p>
-                <h2 className="text-lg font-semibold group-hover:text-blue-600 transition-colors">
+                <p className="text-sm mb-1" style={{ color: '#86efac' }}>{post.date}</p>
+                <h2 className="text-lg font-semibold" style={{ color: '#dcfce7' }}>
                   {post.title}
                 </h2>
                 {post.description && (
-                  <p className="text-gray-600 text-sm mt-1">{post.description}</p>
+                  <p className="text-sm mt-1" style={{ color: '#86efac' }}>{post.description}</p>
                 )}
               </Link>
             </li>

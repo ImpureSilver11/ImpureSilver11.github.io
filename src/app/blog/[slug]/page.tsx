@@ -11,12 +11,23 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
   return (
     <article>
-      <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-600 mb-6 block">
+      <Link href="/blog" className="text-sm mb-6 block" style={{ color: '#4ade80' }}>
         ← Blog一覧
       </Link>
-      <p className="text-sm text-gray-400 mb-2">{post.date}</p>
-      <h1 className="text-2xl font-bold mb-8">{post.title}</h1>
-      <div className="prose prose-gray max-w-none">
+      <p className="text-sm mb-2" style={{ color: '#86efac' }}>{post.date}</p>
+      <h1 className="text-2xl font-bold mb-8" style={{ color: '#bbf7d0' }}>{post.title}</h1>
+      <div
+        className="prose max-w-none"
+        style={{
+          color: '#dcfce7',
+          ['--tw-prose-body' as string]: '#dcfce7',
+          ['--tw-prose-headings' as string]: '#bbf7d0',
+          ['--tw-prose-links' as string]: '#4ade80',
+          ['--tw-prose-bold' as string]: '#bbf7d0',
+          ['--tw-prose-code' as string]: '#86efac',
+          ['--tw-prose-quotes' as string]: '#86efac',
+        }}
+      >
         <MDXRemote source={post.content} />
       </div>
     </article>

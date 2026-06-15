@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="bg-gray-50 text-gray-800 min-h-screen">
+      <body className="min-h-screen" style={{ backgroundColor: '#020c02', color: '#4ade80' }}>
         <Header />
         <main className="max-w-2xl mx-auto px-4 py-8">{children}</main>
       </body>

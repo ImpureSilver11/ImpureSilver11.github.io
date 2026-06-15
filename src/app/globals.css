@@ -1,3 +1,150 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --green: #4ade80;
+  --green-dim: #166534;
+  --green-bright: #86efac;
+  --amber: #fbbf24;
+  --bg: #020c02;
+  --bg-panel: #0a1a0a;
+  --border: #166534;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--green);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+/* CRT scanline overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Pixel border panels */
+.pixel-panel {
+  border: 2px solid var(--border);
+  box-shadow: 0 0 0 1px var(--bg), 0 0 0 3px var(--green-dim), inset 0 0 0 1px var(--green-dim);
+  background-color: var(--bg-panel);
+  padding: 1rem;
+  position: relative;
+}
+
+.pixel-panel::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid var(--green-dim);
+  pointer-events: none;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Glow text */
+.glow {
+  text-shadow: 0 0 8px var(--green), 0 0 16px var(--green);
+}
+
+.glow-amber {
+  color: var(--amber);
+  text-shadow: 0 0 8px var(--amber), 0 0 16px var(--amber);
+}
+
+/* Scrolling marquee */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+/* HP bar */
+.hp-bar {
+  height: 10px;
+  background: var(--green-dim);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-bar-fill {
+  height: 100%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+}
+
+/* Pixel tag */
+.pixel-tag {
+  border: 1px solid var(--green);
+  padding: 2px 8px;
+  font-size: 8px;
+  color: var(--green-bright);
+  background: transparent;
+  cursor: default;
+  transition: all 0.1s;
+}
+
+.pixel-tag:hover {
+  background: var(--green);
+  color: var(--bg);
+}
+
+/* Section title */
+/* prose (blog content) overrides */
+.prose { color: #dcfce7; }
+.prose h1, .prose h2, .prose h3, .prose h4 { color: #bbf7d0; }
+.prose a { color: #4ade80; }
+.prose strong { color: #bbf7d0; }
+.prose code { color: #86efac; background: #0a1a0a; }
+.prose blockquote { color: #86efac; border-left-color: #166534; }
+.prose hr { border-color: #166534; }
+.prose li::marker { color: #4ade80; }
+
+.section-title {
+  color: var(--amber);
+  text-shadow: 0 0 8px var(--amber);
+  border-bottom: 1px dashed var(--green-dim);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-size: 11px;
+}

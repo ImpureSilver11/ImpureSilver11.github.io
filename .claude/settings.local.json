@@ -31,7 +31,16 @@
       "Bash(npm run *)",
       "Bash(node --check /Users/takahashimasahiro/hobby/laravel_test/resources/js/app.js)",
       "Bash(gh api *)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('php:', d['require'].get\\('php',''\\)\\); print\\('pint:', d.get\\('require-dev',{}\\).get\\('laravel/pint','not found'\\)\\)\")"
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('php:', d['require'].get\\('php',''\\)\\); print\\('pint:', d.get\\('require-dev',{}\\).get\\('laravel/pint','not found'\\)\\)\")",
+      "Bash(mkdir -p /Users/takahashimasahiro/work/ImpureSilver11.github.io/tmp)",
+      "Bash(screencapture -x /Users/takahashimasahiro/work/ImpureSilver11.github.io/tmp/localhost_3000.png)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(/Users/takahashimasahiro/work/ImpureSilver11.github.io/.claude/addfTools/window-info *)",
+      "Bash(curl *)",
+      "Bash(open -a \"Google Chrome\" \"http://localhost:3000\")",
+      "Bash(open -a \"Safari\" \"http://localhost:3000\")",
+      "Bash(xargs kill *)",
+      "Bash(rm -rf /Users/takahashimasahiro/work/ImpureSilver11.github.io/.next)"
     ]
   }
 }
