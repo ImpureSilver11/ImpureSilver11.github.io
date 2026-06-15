@@ -128,11 +128,6 @@ export default {
             key: 'github(趣味用)',
             value: 'ImpureSilver11',
             link: 'https://github.com/ImpureSilver11'
-          },
-          {
-            key: 'github(会社用)',
-            value: 'MTakahashi',
-            link: 'https://github.com/takahashimasahiro'
           }
         ]
         }
