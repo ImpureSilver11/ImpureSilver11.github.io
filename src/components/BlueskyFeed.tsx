@@ -5,6 +5,7 @@ import { BskyAgent } from '@atproto/api'
 
 type Post = {
   rkey: string
+  handle: string
   text: string
   createdAt: string
   likeCount: number
@@ -33,6 +34,7 @@ export default function BlueskyFeed() {
           .slice(0, 5)
           .map((item) => ({
             rkey: item.post.uri.split('/').pop() ?? '',
+            handle: item.post.author.handle,
             text: (item.post.record as { text: string }).text,
             createdAt: (item.post.record as { createdAt: string }).createdAt,
             likeCount: item.post.likeCount ?? 0,
@@ -45,8 +47,8 @@ export default function BlueskyFeed() {
 
   return (
     <div
-      className="fixed bottom-4 right-4"
-      style={{ zIndex: 100, width: '260px' }}
+      className="md:fixed md:bottom-4 md:right-4 w-full md:w-[260px] mt-6 md:mt-0"
+      style={{ zIndex: 100 }}
     >
     <div
       className="pixel-panel"
@@ -77,6 +79,9 @@ export default function BlueskyFeed() {
           >
             <div className="text-green-300" style={{ fontSize: '7px', lineHeight: 1.8 }}>
               {post.text.length > 80 ? post.text.slice(0, 80) + '…' : post.text}
+            </div>
+            <div className="text-green-600 mt-1" style={{ fontSize: '6px' }}>
+              @{post.handle}
             </div>
             <div className="text-green-700 mt-1" style={{ fontSize: '6px' }}>
               {formatDate(post.createdAt)}　♥ {post.likeCount}

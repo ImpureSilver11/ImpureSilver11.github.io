@@ -12,5 +12,9 @@ Vue + WebpackからNext.js + Tailwind CSSへ移行しました。
 
 今後はこちらで記事を書いていきます。
 
+<small>
 ってAIが言ってました。
+
 実際どうだかわかりません
+</small>
+

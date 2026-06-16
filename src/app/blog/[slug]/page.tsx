@@ -1,6 +1,12 @@
 import { getAllPosts, getPost } from '@/lib/posts'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
+import remarkBreaks from 'remark-breaks'
+import remarkGfm from 'remark-gfm'
+import rehypePrettyCode from 'rehype-pretty-code'
+import Callout from '@/components/mdx/Callout'
+import YouTube from '@/components/mdx/YouTube'
+import LinkCard from '@/components/mdx/LinkCard'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }))
@@ -28,7 +34,21 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           ['--tw-prose-quotes' as string]: '#86efac',
         }}
       >
-        <MDXRemote source={post.content} />
+        <MDXRemote
+          source={post.content}
+          options={{
+            mdxOptions: {
+              remarkPlugins: [remarkBreaks, remarkGfm],
+              rehypePlugins: [[rehypePrettyCode, { theme: 'github-dark' }]],
+            },
+          }}
+          components={{
+            small: (props) => <small {...props} className="opacity-60" style={{ fontSize: '8pt' }} />,
+            Callout,
+            YouTube,
+            LinkCard,
+          }}
+        />
       </div>
     </article>
   )
