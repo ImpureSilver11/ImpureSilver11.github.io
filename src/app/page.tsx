@@ -1,3 +1,5 @@
+import BlueskyFeed from '@/components/BlueskyFeed'
+
 const links = [
   { key: 'NAME', value: 'ImpureSilver11', href: '' },
   { key: 'BORN', value: '1992/4/30', href: '' },
@@ -30,6 +32,7 @@ const skills = [
 
 export default function Portfolio() {
   return (
+    <>
     <div className="space-y-6 text-center">
 
       {/* Title screen flavor */}
@@ -134,5 +137,7 @@ export default function Portfolio() {
       </div>
 
     </div>
+    <BlueskyFeed />
+    </>
   )
 }
