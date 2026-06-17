@@ -14,19 +14,19 @@ const skills = [
     level: 80,
   },
   {
-    title: '[ INFRA ]',
-    names: ['Docker'],
-    level: 60,
-  },
-  {
     title: '[ DATABASE ]',
     names: ['MySQL', 'PostgreSQL', 'Firebase'],
     level: 70,
   },
   {
-    title: '[ COMMUNICATION ]',
-    names: ['REST'],
-    level: 75,
+    title: '[ INFRA ]',
+    names: ['Docker', 'AWS'],
+    level: 50,
+  },
+  {
+    title: '[ Hobbies ]',
+    names: ['GAME', 'TCG', 'Watch Baseball'],
+    level: 100,
   },
 ]
 
@@ -79,17 +79,19 @@ export default function Portfolio() {
         </table>
       </section>
 
-      {/* QUEST LOG */}
+      {/* BIOGRAPHY */}
       <section className="pixel-panel">
         <h2 className="section-title text-center">
-          ▶ QUEST LOG
+          ▶ BIOGRAPHY
         </h2>
         <div className="space-y-3">
           <div style={{ fontSize: '8px' }}>
+            <div className="text-green-600 mb-1">2016/3/31</div>
+            <div className="text-green-300">東京電機大学卒</div>
             <div className="text-green-600 mb-1">2016/4/1</div>
-            <div className="text-green-300">✔ 社会人クエスト　スタート！</div>
+            <div className="text-green-300">SEとして就職</div>
             <div className="text-green-600 mt-1">
-              {'※ 詳細は直接コンタクトせよ'}
+              {'フルスタックエンジニアとして、Webアプリケーションの開発に従事。'}
             </div>
           </div>
           <div className="text-green-700 mt-2" style={{ fontSize: '8px' }}>
@@ -125,7 +127,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer ticker */}
-      <div className="pixel-panel py-2">
+      {/* <div className="pixel-panel py-2">
         <div className="marquee text-green-700" style={{ fontSize: '8px' }}>
           <span>
             {'★ PRESS ANY KEY TO CONTINUE ★　　'}
@@ -134,7 +136,7 @@ export default function Portfolio() {
             {'★ PRESS ANY KEY TO CONTINUE ★　　'}
           </span>
         </div>
-      </div>
+      </div> */}
 
     </div>
     <BlueskyFeed />
