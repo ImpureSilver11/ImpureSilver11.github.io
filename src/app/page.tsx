@@ -1,7 +1,7 @@
 import BlueskyFeed from '@/components/BlueskyFeed'
 
 const links = [
-  { key: 'NAME', value: 'ImpureSilver11', href: '' },
+  { key: 'NAME', value: '高橋昌弘', href: '' },
   { key: 'BORN', value: '1992/4/30', href: '' },
   { key: 'BLOG', value: '>> OPEN <<', href: 'https://impuresilver11.hateblo.jp/' },
   { key: 'GITHUB', value: '>> OPEN <<', href: 'https://github.com/ImpureSilver11' },
