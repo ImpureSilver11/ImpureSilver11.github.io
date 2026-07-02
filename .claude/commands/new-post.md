@@ -16,11 +16,11 @@ user_invocable: true
 ## 手順
 
 ### 1. ファイル名を決める
-- 今日の日付と時刻を `date` コマンドで取得する（`date +%Y-%m-%d` と `date +%H:%M:%S`）
+- 今日の日付と時刻を `date` コマンドで取得する（`date +%Y-%m-%d` と `date +%H-%M-%S`）
 - `$ARGUMENTS` を英語のkebab-caseに変換してスラグを作る
   - 例: "Claude Codeを使い始めた話" → `claude-code-getting-started`
   - 英語に意訳してよい。直訳でなくて構わない。短く端的に。
-- ファイルパス: `posts/YYYY-MM-DD-{slug}.md`
+- ファイルパス: `posts/YYYY-MM-DD-HH-MM-SS-{slug}.md`
 
 ### 2. 事前調査（引数にパスが含まれる場合）
 - `$ARGUMENTS` に絶対パスまたは相対パスが含まれていれば、そのディレクトリを探索する
