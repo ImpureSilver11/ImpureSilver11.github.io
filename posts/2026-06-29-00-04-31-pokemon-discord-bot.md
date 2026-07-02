@@ -1,6 +1,6 @@
 ---
 title: "ClaudeでポケモンDiscord Botを作った"
-date: "2026-06-29"
+date: "2026-06-29 00:04:31"
 description: "Claude Codeと一緒にRubyでDiscord Botを作った。ポケモンの種族値表示とカード画像検索の2機能を実装してFly.ioにデプロイするまでの話。"
 ---
 

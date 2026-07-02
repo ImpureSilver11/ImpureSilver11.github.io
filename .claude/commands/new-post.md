@@ -16,7 +16,7 @@ user_invocable: true
 ## 手順
 
 ### 1. ファイル名を決める
-- 今日の日付を `date` コマンドで取得する（`date +%Y-%m-%d`）
+- 今日の日付と時刻を `date` コマンドで取得する（`date +%Y-%m-%d` と `date +%H:%M:%S`）
 - `$ARGUMENTS` を英語のkebab-caseに変換してスラグを作る
   - 例: "Claude Codeを使い始めた話" → `claude-code-getting-started`
   - 英語に意訳してよい。直訳でなくて構わない。短く端的に。
@@ -36,7 +36,7 @@ frontmatterと本文を一緒に書く。
 ```yaml
 ---
 title: "{テーマを元に適切なタイトルをつける}"
-date: "YYYY-MM-DD"
+date: "YYYY-MM-DD HH:MM:SS"
 description: "{記事の内容を1〜2文で要約する}"
 ---
 ```
