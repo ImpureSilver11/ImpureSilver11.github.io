@@ -7,6 +7,7 @@ import rehypePrettyCode from 'rehype-pretty-code'
 import Callout from '@/components/mdx/Callout'
 import YouTube from '@/components/mdx/YouTube'
 import LinkCard from '@/components/mdx/LinkCard'
+import ShareButtons from '@/components/ShareButtons'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }))
@@ -50,6 +51,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           }}
         />
       </div>
+      <ShareButtons title={post.title} />
     </article>
   )
 }
