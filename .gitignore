@@ -1,8 +1,34 @@
+# dependencies
 /node_modules
+node_modules/
+
+# next.js build output
 /.next/
 /out/
-.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# env
 .env*
 !.env.example
 
-.claude/logs/skill-usage.jsonl
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# os / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# temp
+/tmp/
+
+# claude runtime state (regenerated per session)
+.claude/logs/
+.claude/.turn-count
+.claude/settings.local.json
