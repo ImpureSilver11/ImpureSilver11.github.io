@@ -32,3 +32,4 @@ Thumbs.db
 .claude/logs/
 .claude/.turn-count
 .claude/settings.local.json
+.claude/pii-patterns.local
