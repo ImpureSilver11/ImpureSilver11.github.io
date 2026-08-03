@@ -17,7 +17,7 @@
 - **正体**: 個人ブログ。Next.js (App Router) 製の静的サイトで、GitHub Pages (github.io) にデプロイする
 - URL: https://impuresilver11.github.io/
 - **記事**: `posts/` に Markdown ファイルとして置く。ファイル名は `YYYY-MM-DD-HH-MM-SS-{slug}.md`
-- 記事の新規作成は `/new-post` スキルを使う（草稿の執筆ルールもそこに定義済み）
+- 記事の新規作成は `/new-post` スキルを使う（作成のワークフローはそこに定義済み）
 - 主要ソース:
   - `src/app/` — ページ（トップ・`blog/`・`blog/[slug]/`）
   - `src/lib/posts.ts` — 記事の読み込み・パース
@@ -33,6 +33,12 @@
 | `npm run lint` | ESLint |
 
 > ⚠️ **ビルドしないと反映されない。** 記事や表示の変更を本番に出すには `npm run build` が必要（README 冒頭の注意書き参照）。
+
+## 文章スタイルガイド
+
+**日本語の文章を書く・直すときは必ず `.claude/templates/writing-style.md` を読む。** 口調・文体、三点リーダの使い方、AIっぽさを消すためのルール（語彙・構造・具体性）、書き終わったあとの自己チェック（grep + 目視チェックリスト）を定義してある。
+
+適用対象はブログ記事（`posts/`）だけでなく、README・告知文・PR 説明など人が読む日本語すべて。記事を書くときは `/new-post` スキルがこのファイルを読み込む。
 
 ## MDX 記法リファレンス
 
