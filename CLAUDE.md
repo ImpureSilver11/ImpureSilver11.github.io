@@ -40,6 +40,8 @@
 
 適用対象はブログ記事（`posts/`）だけでなく、README・告知文・PR 説明など人が読む日本語すべて。記事を書くときは `/new-post` スキルがこのファイルを読み込む。
 
+推敲には外部スキル **yomiyasu**（`.claude/skills/yomiyasu/`、取得元と版は同ディレクトリの `UPSTREAM.md`）を使う。yomiyasu とスタイルガイドがぶつかったときはスタイルガイドを優先する（`writing-style.md` の「yomiyasu との併用」参照）。
+
 ## URL を扱うときのルール（セキュリティ）
 
 外部 URL を開く（WebFetch / WebSearch / `curl` などで取得する）前、および記事やドキュメントに URL を載せる前に、その URL が安全か確認する。
