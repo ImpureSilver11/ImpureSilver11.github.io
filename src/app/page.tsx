@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BlueskyFeed from '@/components/BlueskyFeed'
 
 const links = [
@@ -125,6 +126,12 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
+
+      <div style={{ fontSize: '7px' }}>
+        <Link href="/now-playing" className="text-green-700 hover:text-green-400">
+          {'> NOW PLAYING'}
+        </Link>
+      </div>
 
       {/* Footer ticker */}
       {/* <div className="pixel-panel py-2">
